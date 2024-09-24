@@ -1,25 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Francis WDD 131</title>
-    <link rel="stylesheet" href="week01/styles/layout.css">
+    <meta name="description" content="Learn more about Francis Adinna. His life, works and projects all packed in WDD 131 - Dynamic Web Fundamentals. See his portfolio and also all his future projects.">
+    <meta name="author" content="Francis Adinna">
+    <title>WDD 131 - Dynamic Web Fundamentals - Francis Adinna</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script defer src="scripts/getdates.js"></script>
 </head>
-<body>
-    <div class="parent">
-        <header >
-            <div class="header"><h3>Header Content</h3></div>
-            <nav class="navigation modern">
-                <a href="week01/basic-layout.html">Home</a>
-                <a href="#">Projects</a>
-                <a href="#">Services</a>
-                <a href="#">Contact Us</a>
-            </nav>
-        </header>
-        <main class="main">Main Content</main>
-        <div class="aside">Aside Content</div>
-        <footer>Footer Content</footer>
-    </div>
+<body class="container">
+    <header>
+        <h1 class="header">WDD 131: Dynamic Web Fundamentals - Francis Adinna</h1>
+        <nav class="navigation">
+            <a href="www.linkedin.com/in/francis-adinna">LinkedIn</a>
+            <a href=" https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/6?lang=eng&id=p10#p10">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="card about">
+            <h3 class="me">About Me</h3>
+            <div class="myself">
+                <p>My name is Francis Adinna Kelechi and i go by Francis. I was born in Nigeria and i stay with my siblings in Ogun State. I'm currently working in a pharmeutical company a their inventory officer. I want to improve my coding skill so i can better my life.</p>
+                <img src="images/profile.jpeg" alt="Francis Adinna" >
+            </div>
+            <h2 class="place">Ogun, Nigeria</h2>
+            <div class="country">
+                <figure><img src="images/Nigeria Flag.png" alt="Nigeria Flag"></figure>
+                <p>Nigeria, located in West Africa, has a rich and diverse history shaped by its ethnic groups, colonial experiences, and independence movement. Today, Nigeria is Africa's most populous country and the largest economy, driven largely by its oil resources. Despite challenges like corruption, ethnic tensions, and security issues, it plays a significant role in regional and global affairs.</p>
+            </div>
+        </section>
+        <section class="card web">
+            <h3>Web Dev Resources</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN</a></li>
+                <li><a href="https://www.w3schools.com/">W3schools</a></li>
+                <li><a href="https://openclassrooms.com/en/">Openclassromms</a></li>
+                <li><a href="https://chatgpt.com/">Chatgpt</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🎖Francis Adinna🎖 Nigeria</p>
+        <p id="lastmodified"></p>
+    </footer>
 </body>
 </html>
