@@ -86,6 +86,7 @@ main{
     border-top-left-radius: 1rem ;
     border-top-right-radius: 1rem ;
     padding: 0.5rem 0;
+    font-size: clamp(0.3rem, 5vw, 1.1rem);
 }
 
 .myself{
@@ -129,7 +130,7 @@ img {
     grid-template-rows: auto 1fr;
 }
 
-.web h3{
+.web h2{
     grid-row: 1/2;
     background-color: #520000;
     color: #fff;
@@ -137,12 +138,17 @@ img {
     border-top-left-radius: 0.5rem ;
     border-top-right-radius: 0.5rem ;
     padding: 0.5rem 0;
+    font-size: clamp(0.3rem, 5vw, 1.1rem);
 }
 
 .web ul{
     grid-row: 2/3;
     align-self: center;
     justify-self: center;
+}
+
+li{
+    padding: 7px 0;
 }
 
 footer{
