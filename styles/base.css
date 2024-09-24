@@ -21,8 +21,6 @@
 header {
     grid-column: 1/5;
     display: grid;
-    grid-row: auto auto;
-
 }
 
 .header {
