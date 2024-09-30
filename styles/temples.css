@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #520000;
+    padding: 1em;
+    box-shadow: 0 0 15px #520000;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    grid-template-columns: 1fr 1fr ;
+    
+   
+}
+
+#menuBtn {
+	display: block;
+	font-size: 1.5rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	color: #ffffff;
+    grid-column: 2/3;
+    text-align: right;
+}
+
+#menuBtn::before {
+    content: "≡";
+}
+
+header h1 {
+    grid-column: 1/2;
+}
+h1 {
+    font-size: clamp(1.5rem, 3vmin, 2rem);
+}
+
+body{
+    font-family: "Kanit", sans-serif;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+
+nav {
+    background-color:  #ffca85;
+}
+
+.navi {
+    display: none;
+    grid-column: 1/3;
+}
+
+.navi a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    color: #520000;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+    
+}
+
+.navi a:hover {
+    background-color:#520000;
+    color: white;
+    border: 1px solid #ffca85;
+}
+
+#active{
+    color: #292828;
+}
+
+#active:hover {
+    background-color:#520000;
+    color: white;
+    border: 1px solid #ffca85;
+}
+
+.show.navi {
+    display: block;
+}
+
+#menuBtn.show::before {
+    content: "X";
+}
+main {
+    margin-top: 5rem;
+    display: grid;
+    grid-gap: 1rem;
+    text-align: center;
+}
+
+figure img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+figcaption {
+    font-size: small;
+}
+
+footer{
+    background-color: #ffca85;
+    text-align: center;
+    padding: 0.5rem 0;
+    margin-top: 1rem;
+}
