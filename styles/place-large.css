@@ -1,0 +1,76 @@
+@media all and (min-width: 765px){
+    main {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        max-width: 1500px;
+    }
+
+    picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .top-left {
+
+        position: absolute;
+        top: 100px;
+        left: 0;
+        margin: 20px;
+        padding: 20px;
+        font-size: 10px;
+        background-color: rgba(230, 230, 230, 0.397);
+        padding-top: 3rem;
+        
+    }
+
+    .top-left div {
+        position: absolute;
+        width: 8rem;
+        padding: 0.4rem;
+        padding-left: 1rem;
+        background-color: var(--green);
+        text-align: left;
+        top: 0;
+        left: 0;
+        display: flex;
+        color: var(--white);  
+       
+        
+             
+    }
+
+    .weather{
+        position: absolute;
+        bottom: 50px;
+        right: 10px;
+        margin: 20px;
+        padding: 20px;
+        font-size: 10px;
+        background-color: rgba(230, 230, 230, 0.397);
+        padding-top: 4rem;
+       
+    }
+
+    .h2 {
+        display: flex;
+        align-items: center;
+        background-color: var(--green);
+        position: absolute;
+        width: 8rem;
+        padding-left: 1rem;
+        color: var(--white);
+        align-self: flex-start;
+       
+       
+    }
+
+    .h2 img {
+        width: 40px;
+    }
+}

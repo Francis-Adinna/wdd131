@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get to know my origin, where i'm birth and where i currently stay. See my origin and also know the climate structure of my place.">
+    <meta name="author" content="Francis Adinna">
+    <title>My place</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main class="main">
+        <picture>
+            <source srcset="images/waterfall-large.webp" media="(min-width: 750px)">
+            <img src="images/woman-staring-at-waterfall.webp" alt="A lady staring at the Matsirga Waterfall" width="350" height="auto">
+        </picture>
+        <div class="data top-left">
+            <div class="h2">
+                <h2>Data</h2>
+            </div>
+            <p class="strong"><strong>Area: </strong></p>
+            <p class="normal">923,7770 sq km</p>
+            <p class="strong"><strong>Population: </strong></p>
+            <p class="normal">218,500,000</p>
+            <p class="strong"><strong>Capital: </strong></p>
+            <p class="normal">Abuja</p>
+            <p class="strong"><strong>Language: </strong></p>
+            <p class="normal">Igbo, Yourba, Hausa</p>
+            <p class="strong"><strong>Currency: </strong></p>
+            <p class="normal">Naira</p>
+            <p class="strong"><strong>Time Zone: </strong></p>
+            <p class="normal">GMT+1</p>
+            <p class="strong"><strong>Calling Code: </strong></p>
+            <p class="normal">+234</p>
+            <p class="strong"><strong>Internet TLD: </strong></p>
+            <p class="normal">.ng</p>
+        </div>
+        <div class="weather data">
+            <div class="h2" id="h2">
+                <h2>Weather</h2>
+                <img src="icons/sun_sunny_icon.svg" alt="weather icon">
+            </div>
+            <p class="strong"><strong>Temperature: </strong></p>
+            <p class="normal"><span id="temperature">10°C</span></p>
+            <p class="strong"><strong>Conditions: </strong></p>
+            <p class="normal">Partly Cloudy</p>
+            <p class="strong"><strong>Wind: </strong></p>
+            <p class="normal"<span id="windSpeed">5km/h</span></p>
+            <p class="strong"><strong>Wind Chill: </strong></p>
+            <p class="normal"><span id="windChill"></span></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🎖Francis Adinna🎖 Nigeria</p>
+        <p id="lastmodified"></p>
+    </footer>
+    <script defer src="scripts/place.js"></script>
+</body>
+</html>
