@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is about loading the page only when the user scrolls to its particular location.">
+    <meta name="author" content="Francis Adinna">
+    <title>Lazy Loading</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+    <header>                  
+        <h1>Lazy Loading</h1>
+    </header>
+    <main>
+        <img src="//via.placeholder.com/400/600/" alt="Placeholder Image 1" loading="lazy" width="400" height="600">
+        <img src="//via.placeholder.com/400/600/" alt="Placeholder Image 2" loading="lazy" width="400" height="600">
+        <img src="//via.placeholder.com/400/600/" alt="Placeholder Image 3" loading="lazy" width="400" height="600">
+        <img src="//via.placeholder.com/400/600/" alt="Placeholder Image 4" loading="lazy" width="400" height="600">
+        <img src="//via.placeholder.com/400/600/" alt="Placeholder Image 5" loading="lazy" width="400" height="600">
+        <img src="//via.placeholder.com/400/600/" alt="Placeholder Image 6" loading="lazy" width="400" height="600">
+    </main>
+    <footer>
+        <p id="currentyear"></p>
+        <p id="lastmodified"></p>
+    </footer>
+    <script defer src="script/lazyload.js"></script>
+</body>
+</html>
