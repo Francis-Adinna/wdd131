@@ -1,0 +1,56 @@
+@media only screen and (min-width: 40em) {
+    #menuBtn {
+    display: none;
+   }
+
+   nav {
+    display: flex;
+   }
+
+   .navi{
+    display: flex;
+
+   }
+
+   body{
+    display: grid;
+   }
+
+   header{
+    display: flex;
+   }
+
+   .navi a {
+    padding: 0.5rem;
+   }
+   #active{
+    color: #292828;;
+   }
+
+   #active:hover {
+    background-color:#520000;
+    color: white;
+    border: 1px solid #ffca85;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        justify-self: center;
+    }
+
+    main h2 {
+        grid-column: 1/4;
+    }
+
+    .temple-card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 0 10px gray;
+        margin-top: 5px;
+        
+    }
+   
+}
