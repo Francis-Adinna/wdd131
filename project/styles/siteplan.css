@@ -1,0 +1,14 @@
+h1{
+    font-family: "orbitron", sans-serif;
+    font-size: 2rem;
+}
+
+body{
+    font-family: "nunito", sans-serif;
+    background: linear-gradient(to right, #202E3D, #2C7873);
+    color: #ECF0F1;
+}
+
+figure{
+    text-align: center;
+}
