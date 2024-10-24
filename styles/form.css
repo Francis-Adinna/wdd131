@@ -1,0 +1,109 @@
+body{
+    font-family: "nunito", sans-serif;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    background-color:#202E3D;
+    color: #ECF0F1;
+    padding: .8rem;
+    width: 450px;
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.product-review{
+    background: linear-gradient(to right, #202E3D, #2C7873);
+    color: #ECF0F1;
+    width: 450px;
+    padding: 2rem 1rem;
+}
+
+.product-review select,
+.product-review input[type='date'],
+.product-review input[type='text'],
+.product-review textarea{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    font-size: .9rem;
+}
+
+footer{
+    background-color:#202E3D;
+    color: #ECF0F1;
+    padding: .8rem;
+    width: 450px;
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+
+.product-review label{
+    display: block;
+    padding-top: .5rem;
+    font-size: 1rem;
+    align-self: center;
+    font-weight: bold;
+}
+
+.product-review div{
+    display: block;
+    padding-top: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.check, .rating {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.check label {
+    font-weight: normal;
+    font-size: .9rem;
+    align-self: center;
+}
+
+.product-review input:required{
+    border-bottom: 5px solid red;
+}
+.product-review input:required:valid{
+    border-bottom: 5px solid green;
+}
+
+.opt{
+    font-style: italic;
+    font-size: .6rem;
+}
+
+.product-review input[type='submit']{
+    border: none;
+    max-width: 400px;
+    width: 96%;
+    margin: .5rem 2% ;
+    padding: 1rem;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, rgb(1, 59, 1), rgb(1, 104, 1));
+    font-size: 1rem;
+    color: #ECF0F1;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px #999;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.product-review input[type='submit']:active{
+    transform: scale(.95);
+
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page contains a product review form and it's validation. It will show the best practices that should be implemented when creating a form.">
+    <meta name="author" content="Francis Adinna">
+    <title>Product Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Product Review</h1>
+    <form action="review.html" method="get" class="product-review" id="product-form">
+        <label for="choose-product">Product name
+            <select name="choose-product" id="choose-product" required>
+                <option value="">Choose Product &#9662;</option>
+            </select>
+        </label>
+        <div class="rating">
+            <label for="five-star"><input type="radio" id="five-star" name="rating" value="five" required>&#9733; &#9733; &#9733; &#9733; &#9733;</label>
+            <label for="four-star"><input type="radio" id="four-star" name="rating" value="four" required>&#9733; &#9733; &#9733; &#9733;</label>
+            <label for="three-star"><input type="radio" id="three-star" name="rating" value="three" required>&#9733; &#9733; &#9733;</label>
+            <label for="two-star"><input type="radio" id="two-star" name="rating" value="two" required>&#9733; &#9733;</label>
+            <label for="one-star"><input type="radio" id="one-star" name="rating" value="one" required>&#9733;</label>
+        </div>
+        <label for="date">Date of Installation
+            <input type="date" id="date" name="date" required>
+        </label>
+
+        <div>Which features do you find usefull?<br><i>(Check all that applies)</i></div>
+        <div class="check">
+            <label><input type="checkbox" id="durability" name="durability">Durability</label>
+            <label><input type="checkbox" id="ease" name="ease">Ease of Use</label>
+            <label><input type="checkbox" id="performance" name="performance">Performance</label>
+            <label><input type="checkbox" id="design" name="design">Design</label>
+        </div>
+        
+        <div>Written Review <span class="opt">(Optional)</span></div>
+        <textarea name="review" id="review" rows="4" ></textarea>
+        <label>Your Name  <span class="opt">(Optional)</span>
+        <input type="text" name="name" id="name"></label>
+        <input type="submit" value="Post My Review">
+    </form>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🎖Francis Adinna🎖 Nigeria</p>
+        <p id="lastmodified"></p>
+    </footer>
+    <script defer src="scripts/form.js"></script>
+</body>
+</html>
