@@ -26,46 +26,37 @@ const products = [
     }
 ];
 
-const select = document.getElementById("choose-product");
-console.log(select);
-let options = '';
 
-products.forEach((item) =>{
-    options += `<option value='${item.id}'>${item.name}</option>`
-});
-
-select.innerHTML += options;
 // To make my form to be counting how times user client visits a page, i must first prevent the normal form submit defult that takes me to the review.html
 
-const form = document.getElementById("product-form");
-
-form.addEventListener('submit', (e)=>{
-    e.preventDefault();
-    // I will now make it redirect me to the review page.
-    let reviewCount = localStorage.getItem('reviewCount') ? parseInt(localStorage.getItem('reviewCount')) : 0;
-    reviewCount += 1;
-    console.log("New Review Count: ", reviewCount);
-    // I will now update the local storage with this now value
-
-    localStorage.setItem('reviewCount', reviewCount);
-
-
-    window.location.href = 'review.html';
-
-});
-
-// Assuming we are now in the review page we will want to now add the counter 
-
-
-//Let now call the id that will display the review count
-
 document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("product-form");
+    if (form) {
+        // If the form exists, you're on the form page
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Retrieve review count from localStorage, or initialize it to 0 if not found
+            let reviewCount = localStorage.getItem('reviewCount') ? parseInt(localStorage.getItem('reviewCount')) : 0;
+            
+            // Increment the review count
+            reviewCount += 1;
+            
+            // Store the updated count in localStorage
+            localStorage.setItem('reviewCount', reviewCount);
+
+            // Redirect to the review page after submitting
+            window.location.href = 'review.html';
+        });
+    }
+
+    // 2. Logic for the review page
     const displayCounts = document.getElementById('review-count');
     if (displayCounts) {
+        // If the review-count element exists, you're on the review page
         let reviewCount = localStorage.getItem('reviewCount') || 0;
         displayCounts.textContent = `You have submitted ${reviewCount} review(s).`;
-    } else {
-        console.error('Element with id "review-count" not found.');
+
     }
 });
 
@@ -75,3 +66,13 @@ document.getElementById("currentyear").textContent = currentYear;
 const lastModified = document.lastModified;
 
 document.getElementById("lastmodified").textContent = `Last Modified on: ${lastModified}`;
+
+const select = document.getElementById("choose-product");
+console.log(select);
+let options = '';
+
+products.forEach((item) =>{
+    options += `<option value='${item.id}'>${item.name}</option>`
+});
+
+select.innerHTML += options;
