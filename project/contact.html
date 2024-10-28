@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the creative work of Francis Adinna, a graphic designer and frontend development enthusiast. From captivating visuals to sleek web interfaces, Francis blends artistic vision with technical skill to bring ideas to life. Discover innovative design projects and stay tuned as he builds a strong foundation in web development.">
+    <meta name="author" content="Francis Adinna">
+    <title>Francis Work</title>
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/portfolio-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="header-h1">Francis Adinna Creates</h1>
+        <nav class="nav-bar">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="burger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+       <div class="contact-section">
+            <h2>Let's Connect</h2>
+            <form action="response.html" method="get" id="contact-form">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" required autocomplete="name">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required autocomplete="email">
+
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" required rows="4"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Email: kceekaylor@gmail.com</p>
+                <p>Phone: +2349138113018</p>
+            </div>
+       </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🎖Francis Adinna🎖 Nigeria</p>
+        <p id="lastmodified"></p>
+    </footer>
+    <script defer src="scripts/portfolio.js"></script>
+</body>
+</html>

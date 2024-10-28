@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the creative work of Francis Adinna, a graphic designer and frontend development enthusiast. From captivating visuals to sleek web interfaces, Francis blends artistic vision with technical skill to bring ideas to life. Discover innovative design projects and stay tuned as he builds a strong foundation in web development.">
+    <meta name="author" content="Francis Adinna">
+    <title>Francis Work</title>
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/portfolio-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="header-h1">Francis Adinna Creates</h1>
+        <nav class="nav-bar">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="burger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="info">
+                <div>
+                    <h2>Who is Francis Adinna?</h2>
+                    <p>Francis Adinna is a passionate graphic designer and aspiring frontend developer. With a keen eye for aesthetics and a drive to learn, I create visually engaging designs that communicate effectively and resonate with audiences. My journey in design has led me to explore the digital world, where I'm now developing skills in frontend technologies to expand my creative capabilities. As I blend my graphic design expertise with a budding foundation in web development, I'm dedicated to crafting experiences that are both visually appealing and user-friendly.
+                </p>
+                </div>
+                
+                <div class="wkbutton">
+                    <div><a href="project.html" class="wbutton">See My Work</a></div>
+                    <div><a href="contact.html" class="wbutton">Let's Connect</a></div>
+                </div>
+            </div>
+            
+            
+            <div class="image-slider">
+                <div class="slider-inner">
+                    <img src="images/responsive-webpage-desktop.webp" alt="Project 1" loading="lazy" >
+                    <img src="images/responsive-webpage-mobile.webp" alt="Project 2" loading="lazy">
+                    <img src="images/harvest.webp" alt="Project 3" loading="lazy">
+                    <img src="images/form-with-validation.webp" alt="Project 4" loading="lazy">
+                    <img src="images/share-voltage.webp" alt="Project 5" loading="lazy">
+                    <img src="images/vde.webp" alt="Project 6" loading="lazy">
+                    <img src="images/silk-pure-coconut.webp" alt="Project 7" loading="lazy" >
+                    <img src="images/whatsapp-profile-picture.webp" alt="Project 8" loading="lazy" >
+                </div>
+                <div class="slider-nav">
+                    <i class="fa-solid fa-angle-left prev-btn"></i>
+                    <i class="fa-solid fa-angle-right next-btn"></i>
+                  </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🎖Francis Adinna🎖 Nigeria</p>
+        <p id="lastmodified"></p>
+    </footer>
+    <script defer src="scripts/portfolio.js"></script>
+</body>
+</html>
